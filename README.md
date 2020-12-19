@@ -1,4 +1,4 @@
-You can see a demo: https://react-newbot-form.netlify.app/
+You can see a demo: https://react-new-bot.netlify.app/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
