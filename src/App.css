@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ecf6fa;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.imgLogo {
+  width: 400px;
+}
+
+@media screen and (max-width: 400px) {
+  .imgLogo {
+    width: 100%;
+  }
+}
+
+::selection {
+  background-color: #42accd;
+  color: #fff;
+}
+
+/** custom scollbar **/
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #42accd;
+  border-radius: 10px;
+}

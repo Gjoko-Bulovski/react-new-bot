@@ -1,0 +1,32 @@
+.inputGroupsWrapper {
+  display: grid;
+}
+
+.inputGroupsLabel {
+  margin-bottom: 5px;
+}
+
+.inputGroups {
+  width: 100%;
+  outline: none;
+  border: 1px solid #072d43;
+  padding: 10px;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.inputGroups:focus {
+  border: 1px solid rgb(66, 172, 205);
+  box-shadow: 0 0 0 2px rgba(66, 172, 205, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.inputGroupsRed {
+  border: 1px solid red;
+}
+
+.errorTitle {
+  color: red;
+  margin: 0px;
+  font-size: 12px;
+}

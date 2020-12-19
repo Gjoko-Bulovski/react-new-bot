@@ -1,0 +1,134 @@
+.formWrapper {
+  background: #fff;
+  width: 600px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: left;
+  color: #42accd;
+}
+
+.formNewBot {
+  display: grid;
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.leadDeliveryEmailWrapper {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr auto;
+  margin: 10px 0px;
+}
+
+.leadDeliveryEmail {
+  width: 100%;
+  outline: none;
+  border: 1px solid #072d43;
+  padding: 10px;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.leadDeliveryEmail:focus {
+  border: 1px solid rgb(66, 172, 205);
+  box-shadow: 0 0 0 2px rgba(66, 172, 205, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.leadDeliveryEmailButton {
+  outline: none;
+  border: none;
+  background: none;
+  margin-left: 10px;
+}
+
+.leadDeliveryEmail.red {
+  border: 1px solid red;
+}
+
+.fa-plus-square {
+  cursor: pointer;
+  color: #072d43;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-plus-square:not(.isDisabled):hover {
+  color: #42accd;
+}
+
+.fa-plus-square.isDisabled {
+  pointer-events: auto;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.fa-trash-alt {
+  cursor: pointer;
+  color: red;
+  transition: all 0.2s ease-in-out;
+  margin-left: 5px;
+}
+
+.fa-trash-alt:hover {
+  color: #072d43;
+}
+
+.inputGroupsAccordion {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.btnSubmit {
+  outline: none;
+  border: none;
+  margin: auto;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: #42accd;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btnSubmit:hover {
+  background: hsl(194, 58%, 43%);
+}
+
+.containerUl {
+  overflow-x: auto;
+  width: 560px;
+  margin: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  display: flex;
+  list-style: none;
+}
+
+.containerLi {
+  flex-shrink: 0;
+  width: 560px;
+  position: relative;
+  scroll-snap-align: start;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .formWrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .containerUl {
+    width: 100%;
+  }
+  .containerLi {
+    width: 100%;
+  }
+}

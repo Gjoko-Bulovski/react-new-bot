@@ -1,0 +1,43 @@
+.checkboxGroupsLabel {
+  cursor: pointer;
+  color: #072d43;
+  display: flex;
+  align-items: center;
+}
+
+.checkboxGroupsInput {
+  display: none;
+}
+
+.checkboxGroupsSpan {
+  width: 15px;
+  height: 15px;
+  background: #ccc;
+  display: inline-block;
+  position: relative;
+  border-radius: 3px;
+}
+
+.checkboxGroupsInput:checked + .checkboxGroupsSpan::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 12px;
+  background: #42accd;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}
+
+.checkboxGroupsInput:checked + .checkboxGroupsSpan::after {
+  content: "\2714";
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #fff;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}

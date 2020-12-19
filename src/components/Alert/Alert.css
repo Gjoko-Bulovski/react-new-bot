@@ -1,0 +1,21 @@
+.alert {
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  text-transform: capitalize;
+  border-radius: 3px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
+  z-index: 1;
+}
+
+.alert-danger {
+  background: red;
+}
+
+.alert-success {
+  background: green;
+}
